@@ -91,7 +91,7 @@ document.addEventListener('visibilitychange', function() {
    
    //运行时间
    //调用格式 <a>风雨中度过<a id="days" style="color:#00ff89;">0</a>天</a>
-   var s1 = '2017-08-01';//设置为你的建站时间
+   var s1 = '2018-04-24';//设置为你的建站时间
    s1 = new Date(s1.replace(/-/g, "/"));
    s2 = new Date();
    var days = s2.getTime() - s1.getTime();
