@@ -574,34 +574,31 @@
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用 DISQUS -->
-<div id="disqus-comment">
-    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2019/06/16/大佬群里面经常会出现的名词 科普/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2019/06/16/大佬群里面经常会出现的名词 科普/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-</script>
-<script type="text/ls-javascript" id="disqus-thread-script">
-    queue.offer(function() {
-            (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document;
-                var s = d.createElement('script');
-                s.src = '//shortname.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', + new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        });
-</script>
-
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
 </div>
 <style>
-    #disqus-comment{
+    #gitment-comment{
         background-color: #eee;
         padding: 2pc;
     }
 </style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        //id: '页面 ID', // 可选。默认为 location.href
+        owner: 'SimonZeroKing',
+        repo: 'SimonZeroKing.github.io',
+        oauth: {
+            client_id: '3c6e644824ccb2fdd657',
+            client_secret: 'fdcf1e1d0597d68065845523c29674465c8ba739',
+        },
+    })
+    gitment.render('container')
+</script>
 
                 
             </div>
@@ -1002,8 +999,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-   <!-- 使用 DISQUS js 代码 -->
-<script id="dsq-count-scr" src="//shortname.disqus.com/count.js" async></script>
+   <!-- Gitment -->
 
 
 
