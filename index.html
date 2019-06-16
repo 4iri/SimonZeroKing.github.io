@@ -82,10 +82,6 @@
 
     <!-- RSS -->
     
-        
-            <link rel="alternate" type="application/atom+xml" href="[object Object]">
-        
-    
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -344,6 +340,20 @@
 
     <!-- Search -->
     
+    <!-- Google -->
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action>
+        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
+            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
+        </label>
+
+        <form autocomplete="off" id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
+            <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder>
+            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
+
+            <input type="hidden" name="sitesearch" value="http://yoursite.com">
+        </form>
+    </div>
+
 
 
 
@@ -400,12 +410,6 @@
         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
             
 
-            
-                <a class="index_share-link" href="[object Object]">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        文章 RSS
-                    </li>
-                </a>
             
 
             
@@ -1482,6 +1486,9 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//disqus.disqus.com/count.js" async></script>
 
 
 
