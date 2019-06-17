@@ -311,3 +311,20 @@ element.style {
     border-width:5px;
     animation:avatar .5s
 }
+
+/* 代码块 */
+.self-desc {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+element.style {
+    margin-top: 50px;
+    padding: 16px;
+    background-color: rgba(255,255,255,0.7);
+    border-left: 5px solid rgba(114,102,186,0.7);
+}
