@@ -4,6 +4,43 @@
   
     
     <entry>
+      <title>在宝塔面板上部署 SSpanel 魔改版</title>
+      <link href="/2019/06/19/sspanel%E6%90%AD%E5%BB%BA/"/>
+      <url>/2019/06/19/sspanel%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<p>欸嘿,番茄酱最近开了个小机场 然后发现遇到的问题还挺多 而且网路上相关资料还比较少所以就想自己来写一片博文 主要是教大家如何用 宝塔面板来 安装sspanel机场控制面板 <del>应该是最详细教程 确信</del></p><hr><p><strong><h1>安装宝塔</h1></strong></p><h3>条件</h3><p>首先你的有一个 <code>vps</code> 嗯 是的 配置一般就好 配置最好不要太低</p><p>系统要求 <code>Linux</code> 其实windows咱也没试过 因为就只会linux</p><h3>搭建宝塔环境</h3><p>你要是用你的ssh工具连上你的<code>vps</code></p><p><img src="https://i.loli.net/2019/06/19/5d091097d59d929335.png" alt="~I}7H[JVC]54Z">]</p><p>如何使用 <code>sudo su</code> 进入管理员账户 如果已经是管理员账户的话 跳过此步骤</p><p><img src="https://i.loli.net/2019/06/19/5d091097d176b34574.png" alt="3ACH"></p><p>输入以下命令进行安装宝塔面板</p><p>Centos</p><blockquote><p>yum install -y wget &amp;&amp; wget -O install.sh <a href="http://download.bt.cn/install/install.sh" target="_blank" rel="noopener">http://download.bt.cn/install/install.sh</a> &amp;&amp; sh install.sh</p></blockquote><p>Ubuntu</p><blockquote><p>wget -O install.sh <a href="http://download.bt.cn/install/install-ubuntu_6.0.sh" target="_blank" rel="noopener">http://download.bt.cn/install/install-ubuntu_6.0.sh</a> &amp;&amp; bash install.sh</p></blockquote><p>[<img src="https://i.loli.net/2019/06/19/5d091097bfead96011.png" alt="F1(E[7T2TH)511~1`7VNV$A.png](https://i.loli.net/2019/06/19/5d091097bfead96011.png)"></p><p>输入y,回车进行安装</p><p><a href="https://i.loli.net/2019/06/19/5d09109830e8036562.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d09109830e8036562.png" alt="$L$UVQ`(T0EN32D9U(HKYKL.png"></a></p><p>漫长的等待………..</p><p><a href="https://i.loli.net/2019/06/19/5d091098e43fd99612.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d091098e43fd99612.png" alt="G0783ZL~ZAN8YPQ}ODVKS%0.png"></a></p><p>安装好了会出现以下画面</p><p><a href="https://i.loli.net/2019/06/19/5d09109828fba98667.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d09109828fba98667.png" alt="_5PXU`2JDHC4GY9K{6}ULK1.png"></a></p><p>将地址和账号密码复制粘贴到浏览器 然后进行登录</p><p><img src="https://i.loli.net/2019/06/19/5d0911862c5e649182.png" alt="3UDXQ.png"></p><h3>配置宝塔</h3><p>安装 LNMP （注意这边 选择php的时候记得选择7.1版本的</p><p><a href="https://i.loli.net/2019/06/19/5d091098463d376293.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d091098463d376293.png" alt="U)DA1_K($`GH`_{61)_S8%F.png"></a></p><p>安装中………</p><p><a href="https://i.loli.net/2019/06/19/5d0911888074764743.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d0911888074764743.png" alt="Y3)SIJM8~U$B~~%PA}BQ@7K.png"></a></p><p>在安装的时间 我们可以去宝塔面板的面板设置修改一下账户密码 方便以后登录</p><p><img src="https://i.loli.net/2019/06/19/5d09109818aa413207.png" alt="$`809U6NOSH80OME36"></p><p>然后如果<code>vps</code>配置不高的话可以去 软件管理里面的系统工具</p><p>配置高的用户请跳过这一步骤 ！！！！！！</p><p><a href="https://i.loli.net/2019/06/19/5d091099184fb30250.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d091099184fb30250.png" alt></a></p><p>找到 Linux工具箱 进行安装</p><p><a href="https://i.loli.net/2019/06/19/5d0911886267c85017.jpg" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d0911886267c85017.jpg" alt></a></p><p>安装好 设置他 选择侧边栏第二个 <code>Swap虚拟内存</code> 可以改成 自己原有内存的 <code>1.5倍</code> 这边番茄酱就改 <code>1倍</code> 就够用了 然后确定</p><p><a href="https://i.loli.net/2019/06/19/5d0911894834b94370.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d0911894834b94370.png" alt="6H7)I$Y`@LE)A@MUPADQ$_4.png"></a></p><p>[<img src="https://i.loli.net/2019/06/19/5d09109875f4987975.jpg" alt="[](https://i.loli.net/2019/06/19/5d09109875f4987975.jpg)"></p><p>好了之后可以去侧边栏时区设置里面 设置为 亚洲上海 Asia shanghai</p><p>等环境都安装好了的话 可以去软件管理里面 查看环境是否安装成功 因为番茄酱的机子较渣 每次安装php7.1的时候就无法使用急速安装 </p><p><a href="https://i.loli.net/2019/06/19/5d09109875f4987975.jpg" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d09109875f4987975.jpg" alt></a></p><p>这边卸载掉重新编译安装一下 （当然你们如果没出问题的话就继续</p><p><a href="https://i.loli.net/2019/06/19/5d0912af21d0682046.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d0912af21d0682046.png" alt="O~OXB9W%907~%TG@)6$_N`X.png"></a></p><p>未完待续</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Sspanel </tag>
+            
+            <tag> 机场 </tag>
+            
+            <tag> SSR </tag>
+            
+            <tag> 代理 </tag>
+            
+            <tag> VPN </tag>
+            
+            <tag> 详细教程 </tag>
+            
+            <tag> SSpanel V3 魔改版 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Google AdSense 申请日志及教程</title>
       <link href="/2019/06/16/Google%20AdSense%20%E7%94%B3%E8%AF%B7%E6%97%A5%E5%BF%97%E5%8F%8A%E6%95%99%E7%A8%8B/"/>
       <url>/2019/06/16/Google%20AdSense%20%E7%94%B3%E8%AF%B7%E6%97%A5%E5%BF%97%E5%8F%8A%E6%95%99%E7%A8%8B/</url>

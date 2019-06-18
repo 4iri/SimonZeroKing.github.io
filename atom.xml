@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-16T03:55:02.190Z</updated>
+  <updated>2019-06-18T16:46:22.259Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>在宝塔面板上部署 SSpanel 魔改版</title>
+    <link href="http://yoursite.com/2019/06/19/sspanel%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2019/06/19/sspanel搭建/</id>
+    <published>2019-06-18T15:56:14.617Z</published>
+    <updated>2019-06-18T16:46:22.259Z</updated>
+    
+    <content type="html"><![CDATA[<p>欸嘿,番茄酱最近开了个小机场 然后发现遇到的问题还挺多 而且网路上相关资料还比较少所以就想自己来写一片博文 主要是教大家如何用 宝塔面板来 安装sspanel机场控制面板 <del>应该是最详细教程 确信</del></p><hr><p><strong><h1>安装宝塔</h1></strong></p><h3>条件</h3><p>首先你的有一个 <code>vps</code> 嗯 是的 配置一般就好 配置最好不要太低</p><p>系统要求 <code>Linux</code> 其实windows咱也没试过 因为就只会linux</p><h3>搭建宝塔环境</h3><p>你要是用你的ssh工具连上你的<code>vps</code></p><p><img src="https://i.loli.net/2019/06/19/5d091097d59d929335.png" alt="~I}7H[JVC]54Z">]</p><p>如何使用 <code>sudo su</code> 进入管理员账户 如果已经是管理员账户的话 跳过此步骤</p><p><img src="https://i.loli.net/2019/06/19/5d091097d176b34574.png" alt="3ACH"></p><p>输入以下命令进行安装宝塔面板</p><p>Centos</p><blockquote><p>yum install -y wget &amp;&amp; wget -O install.sh <a href="http://download.bt.cn/install/install.sh" target="_blank" rel="noopener">http://download.bt.cn/install/install.sh</a> &amp;&amp; sh install.sh</p></blockquote><p>Ubuntu</p><blockquote><p>wget -O install.sh <a href="http://download.bt.cn/install/install-ubuntu_6.0.sh" target="_blank" rel="noopener">http://download.bt.cn/install/install-ubuntu_6.0.sh</a> &amp;&amp; bash install.sh</p></blockquote><p>[<img src="https://i.loli.net/2019/06/19/5d091097bfead96011.png" alt="F1(E[7T2TH)511~1`7VNV$A.png](https://i.loli.net/2019/06/19/5d091097bfead96011.png)"></p><p>输入y,回车进行安装</p><p><a href="https://i.loli.net/2019/06/19/5d09109830e8036562.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d09109830e8036562.png" alt="$L$UVQ`(T0EN32D9U(HKYKL.png"></a></p><p>漫长的等待………..</p><p><a href="https://i.loli.net/2019/06/19/5d091098e43fd99612.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d091098e43fd99612.png" alt="G0783ZL~ZAN8YPQ}ODVKS%0.png"></a></p><p>安装好了会出现以下画面</p><p><a href="https://i.loli.net/2019/06/19/5d09109828fba98667.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d09109828fba98667.png" alt="_5PXU`2JDHC4GY9K{6}ULK1.png"></a></p><p>将地址和账号密码复制粘贴到浏览器 然后进行登录</p><p><img src="https://i.loli.net/2019/06/19/5d0911862c5e649182.png" alt="3UDXQ.png"></p><h3>配置宝塔</h3><p>安装 LNMP （注意这边 选择php的时候记得选择7.1版本的</p><p><a href="https://i.loli.net/2019/06/19/5d091098463d376293.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d091098463d376293.png" alt="U)DA1_K($`GH`_{61)_S8%F.png"></a></p><p>安装中………</p><p><a href="https://i.loli.net/2019/06/19/5d0911888074764743.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d0911888074764743.png" alt="Y3)SIJM8~U$B~~%PA}BQ@7K.png"></a></p><p>在安装的时间 我们可以去宝塔面板的面板设置修改一下账户密码 方便以后登录</p><p><img src="https://i.loli.net/2019/06/19/5d09109818aa413207.png" alt="$`809U6NOSH80OME36"></p><p>然后如果<code>vps</code>配置不高的话可以去 软件管理里面的系统工具</p><p>配置高的用户请跳过这一步骤 ！！！！！！</p><p><a href="https://i.loli.net/2019/06/19/5d091099184fb30250.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d091099184fb30250.png" alt></a></p><p>找到 Linux工具箱 进行安装</p><p><a href="https://i.loli.net/2019/06/19/5d0911886267c85017.jpg" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d0911886267c85017.jpg" alt></a></p><p>安装好 设置他 选择侧边栏第二个 <code>Swap虚拟内存</code> 可以改成 自己原有内存的 <code>1.5倍</code> 这边番茄酱就改 <code>1倍</code> 就够用了 然后确定</p><p><a href="https://i.loli.net/2019/06/19/5d0911894834b94370.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d0911894834b94370.png" alt="6H7)I$Y`@LE)A@MUPADQ$_4.png"></a></p><p>[<img src="https://i.loli.net/2019/06/19/5d09109875f4987975.jpg" alt="[](https://i.loli.net/2019/06/19/5d09109875f4987975.jpg)"></p><p>好了之后可以去侧边栏时区设置里面 设置为 亚洲上海 Asia shanghai</p><p>等环境都安装好了的话 可以去软件管理里面 查看环境是否安装成功 因为番茄酱的机子较渣 每次安装php7.1的时候就无法使用急速安装 </p><p><a href="https://i.loli.net/2019/06/19/5d09109875f4987975.jpg" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d09109875f4987975.jpg" alt></a></p><p>这边卸载掉重新编译安装一下 （当然你们如果没出问题的话就继续</p><p><a href="https://i.loli.net/2019/06/19/5d0912af21d0682046.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/06/19/5d0912af21d0682046.png" alt="O~OXB9W%907~%TG@)6$_N`X.png"></a></p><p>未完待续</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;欸嘿,番茄酱最近开了个小机场 然后发现遇到的问题还挺多 而且网路上相关资料还比较少所以就想自己来写一片博文 主要是教大家如何用 宝塔面板来 安装sspanel机场控制面板 &lt;del&gt;应该是最详细教程 确信&lt;/del&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;&lt;h1&gt;安装宝塔
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Sspanel" scheme="http://yoursite.com/tags/Sspanel/"/>
+    
+      <category term="机场" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%9C%BA/"/>
+    
+      <category term="SSR" scheme="http://yoursite.com/tags/SSR/"/>
+    
+      <category term="代理" scheme="http://yoursite.com/tags/%E4%BB%A3%E7%90%86/"/>
+    
+      <category term="VPN" scheme="http://yoursite.com/tags/VPN/"/>
+    
+      <category term="详细教程" scheme="http://yoursite.com/tags/%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="SSpanel V3 魔改版" scheme="http://yoursite.com/tags/SSpanel-V3-%E9%AD%94%E6%94%B9%E7%89%88/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Google AdSense 申请日志及教程</title>
     <link href="http://yoursite.com/2019/06/16/Google%20AdSense%20%E7%94%B3%E8%AF%B7%E6%97%A5%E5%BF%97%E5%8F%8A%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2019/06/16/Google AdSense 申请日志及教程/</id>
     <published>2019-06-15T17:06:37.852Z</published>
-    <updated>2019-06-16T03:55:02.190Z</updated>
+    <updated>2019-06-17T17:35:26.586Z</updated>
     
     <content type="html"><![CDATA[<p>AdSense终于是申请下来 这篇文章会讲述申请过程以及小技巧</p><hr><p>//暂时还没有文章呢 今天晚上就会有了！！！！！！</p><p>终于下课了呢 今天就来教大家申请<code>Google</code> 的<code>Adsense</code></p><p><strong><h1>前言</h1></strong></p><p><strong>Google AdSense是一个快速简便的网上赚钱方法，可以让具有一定访问量规模的网站发布商为他们的网站展示与网站内容相关的 Google广告并将网站流量转化为收入。</strong> —来自百度百科</p><h3>条件</h3><p>首先你得有个网站 （这不是废话吗 </p><p>然后你得有几篇文章 最好是<strong>原创</strong>的</p><p>有一个<code>google</code>账户！！！</p><p>如果你达成以上条件 那么我们可以开始了 （当然违法的内容是不行的 例如涉黄呀 之类的</p><h3>申请</h3><p>去<code>google Adsense</code>官网</p><p><a href="https://www.google.com/adsense/" target="_blank" rel="noopener">点我跳转</a></p><p>进入官网之后点注册<br><img src="https://i.loli.net/2019/05/15/5cdbd455af05488337.png" alt="请输入图片描述"></p><p>这边注册的时候注意一下 域名是不能用二级域名的 所以<code>hexo</code>或<code>hugo</code>的用户是无法使用<code>github</code>提供的免费域名<br><img src="https://i.loli.net/2019/05/15/5cdbd454d998976310.png" alt="请输入图片描述"></p><p>填好之后就是填地址什么的信息了<br><img src="https://i.loli.net/2019/05/15/5cdbd4554889534648.png" alt="请输入图片描述"></p><p><strong>然后就是等google发邮件提示成功了</strong></p><h3>申请过程中可能会遇见的问题</h3><p>比如创建用户成功之后会进入一个无<strong>css</strong>和<strong>js</strong>的无法操作页面重新登陆还是会那样</p><p>这说明你<code>google</code>账号设置的年龄未满18周岁 只需要到生日那边调一下即可</p><hr><p><strong><h1>奇葩的问题</h1></strong></p><p>这边说一下博主申请的时候遇见了哪一些</p><p>博主一共申请了三次 第三次终于过了 = =</p><p>第一次 google 发邮件给博主 说 申请失败具体原因点进去一看 居然是 有r18 成人 色情内容</p><p>色情内容！！！ what ？？？？</p><p><img src="https://i.loli.net/2019/05/15/5cdbd6a6ac31561431.jpg" alt="请输入图片描述"></p><p>我看了看博客 也就几张动漫头图 我同学甚至给我说 是头图里面的人物胸太大惹 关键是我还信了</p><p>后来什么都没干 我觉得 直接申请第二次 果不其然第二次也失败了</p><p><strong>我怀疑google 又要说我有色情内容 没想到是说我博客不符合标准</strong></p><p>我果断申请了第三次 Lucky</p><p>就申请成功惹 ！！！！！！！</p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>申请通过后：</p><p>定时关注你后台广告的展现量和点击量，哪天发现数据波动很大，记得主动联系客服报备。</p><p>100刀提现前，自己千万千万不要点击包括喊人帮你点击网站广告。</p><p>因为很多人会在100刀提现额度之前被封账号。</p><hr><h2>最后希望大家都申请成功 另外觉得文章还行的话可以点一下广告偶 不会耽误时间的呢 （<del>我很可爱 请给我钱</del></h2>]]></content>
     
