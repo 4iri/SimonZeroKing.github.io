@@ -381,3 +381,16 @@ Style Attribute {
     background-color: currentColor;
 }
 */
+
+#lolijump {
+    position: fixed;
+    bottom: 25px;
+    /*right: 15px;*/
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+}
+
+#lolijump img {
+    max-width: 100%!important;
+}
