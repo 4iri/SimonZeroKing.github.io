@@ -37,7 +37,7 @@
     
     <title>
         
-            Google AdSense 申请日志及教程 | 
+            Hexo 搭建个人博客 第三章 添加自己的域名 | 
         
         番茄酱の萌化小屋
     </title>
@@ -49,7 +49,7 @@
     <meta name="theme-color" content="#3a3f51">
     <meta name="author" content="番茄酱">
     <meta name="description" itemprop="description" content>
-    <meta name="keywords" content="日常,技术,Web,SSPanel,主题,教程,旧文章,分享,即兴">
+    <meta name="keywords" content="日常,技术,Web,SSPanel,主题,教程">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -236,18 +236,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Google AdSense 申请日志及教程 | 番茄酱の萌化小屋">
+    <meta property="og:title" content="Hexo 搭建个人博客 第三章 添加自己的域名 | 番茄酱の萌化小屋">
     <meta property="og:image" content="http://yoursite.com/img/favicon.png">
     <meta property="og:description" content>
-    <meta property="og:article:tag" content="旧文章"> <meta property="og:article:tag" content="分享"> <meta property="og:article:tag" content="即兴"> 
+    
 
     
-        <meta property="article:published_time" content="Sun Jun 16 2019 02:06:37 GMT+0900">
-        <meta property="article:modified_time" content="Tue Jun 18 2019 02:35:26 GMT+0900">
+        <meta property="article:published_time" content="Sun Jun 16 2019 01:53:57 GMT+0900">
+        <meta property="article:modified_time" content="Fri Jun 28 2019 04:36:49 GMT+0900">
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Google AdSense 申请日志及教程 | 番茄酱の萌化小屋">
+    <meta name="twitter:title" content="Hexo 搭建个人博客 第三章 添加自己的域名 | 番茄酱の萌化小屋">
     <meta name="twitter:description" content>
     <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -255,7 +255,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2019/06/16/Google AdSense 申请日志及教程/index.html">
+        <link rel="canonical" href="http://yoursite.com/2019/06/16/3/index.html">
     
 
     <!-- Structured-data for SEO -->
@@ -267,10 +267,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2019/06/16/Google AdSense 申请日志及教程/index.html",
-    "headline": "Google AdSense 申请日志及教程",
-    "datePublished": "Sun Jun 16 2019 02:06:37 GMT+0900",
-    "dateModified": "Tue Jun 18 2019 02:35:26 GMT+0900",
+    "mainEntityOfPage": "http://yoursite.com/2019/06/16/3/index.html",
+    "headline": "Hexo 搭建个人博客 第三章 添加自己的域名",
+    "datePublished": "Sun Jun 16 2019 01:53:57 GMT+0900",
+    "dateModified": "Fri Jun 28 2019 04:36:49 GMT+0900",
     "author": {
         "@type": "Person",
         "name": "番茄酱",
@@ -288,7 +288,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",旧文章,分享,即兴日常,技术,Web,SSPanel,主题,教程",
+    "keywords": "日常,技术,Web,SSPanel,主题,教程",
     "description": "",
 }
 </script>
@@ -348,7 +348,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">条件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">申请</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">申请过程中可能会遇见的问题</span></a></li></ol></li></ol><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.</span> <span class="post-toc-text">奇葩的问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#注意事项"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">注意事项</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">最后希望大家都申请成功 另外觉得文章还行的话可以点一下广告偶 不会耽误时间的呢 （我很可爱 请给我钱</span></a></li></ol></li>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#内容"><span class="post-toc-number">1.</span> <span class="post-toc-text">内容</span></a></li></ol>
     </ul>
     
 
@@ -380,7 +380,7 @@
         
     
             <p class="article-headline-p">
-                Google AdSense 申请日志及教程
+                Hexo 搭建个人博客 第三章 添加自己的域名
             </p>
         </div>
 
@@ -417,15 +417,6 @@
 
     <!-- Tags (bookmark) -->
     
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/分享/">分享</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/即兴/">即兴</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/旧文章/">旧文章</a>
-    </li></ul>
-    
 
     <!-- Share -->
     <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
@@ -439,7 +430,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Google AdSense 申请日志及教程&url=http://yoursite.com/2019/06/16/Google AdSense 申请日志及教程/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hexo 搭建个人博客 第三章 添加自己的域名&url=http://yoursite.com/2019/06/16/3/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -448,7 +439,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Google AdSense 申请日志及教程&url=http://yoursite.com/2019/06/16/Google AdSense 申请日志及教程/index.html&via=番茄酱" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hexo 搭建个人博客 第三章 添加自己的域名&url=http://yoursite.com/2019/06/16/3/index.html&via=番茄酱" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -457,7 +448,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/06/16/Google AdSense 申请日志及教程/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/06/16/3/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -466,7 +457,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/06/16/Google AdSense 申请日志及教程/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/06/16/3/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -481,7 +472,7 @@
 
     <!-- Share Telegram -->
     
-        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yoursite.com/2019/06/16/Google AdSense 申请日志及教程/index.html&text=Google AdSense 申请日志及教程" target="_blank">
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yoursite.com/2019/06/16/3/index.html&text=Hexo 搭建个人博客 第三章 添加自己的域名" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Telegram
             </li>
@@ -496,49 +487,15 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>AdSense终于是申请下来 这篇文章会讲述申请过程以及小技巧</p>
-<hr>
-<p>//暂时还没有文章呢 今天晚上就会有了！！！！！！</p>
-<p>终于下课了呢 今天就来教大家申请<code>Google</code> 的<code>Adsense</code></p>
-<p><strong><h1>前言</h1></strong></p>
-<p><strong>Google AdSense是一个快速简便的网上赚钱方法，可以让具有一定访问量规模的网站发布商为他们的网站展示与网站内容相关的 Google广告并将网站流量转化为收入。</strong> —来自百度百科</p>
-<h3>条件</h3>
-
-<p>首先你得有个网站 （这不是废话吗 </p>
-<p>然后你得有几篇文章 最好是<strong>原创</strong>的</p>
-<p>有一个<code>google</code>账户！！！</p>
-<p>如果你达成以上条件 那么我们可以开始了 （当然违法的内容是不行的 例如涉黄呀 之类的</p>
-<h3>申请</h3>
-
-<p>去<code>google Adsense</code>官网</p>
-<p><a href="https://www.google.com/adsense/" target="_blank" rel="noopener">点我跳转</a></p>
-<p>进入官网之后点注册<br><img src="https://i.loli.net/2019/05/15/5cdbd455af05488337.png" alt="请输入图片描述"></p>
-<p>这边注册的时候注意一下 域名是不能用二级域名的 所以<code>hexo</code>或<code>hugo</code>的用户是无法使用<code>github</code>提供的免费域名<br><img src="https://i.loli.net/2019/05/15/5cdbd454d998976310.png" alt="请输入图片描述"></p>
-<p>填好之后就是填地址什么的信息了<br><img src="https://i.loli.net/2019/05/15/5cdbd4554889534648.png" alt="请输入图片描述"></p>
-<p><strong>然后就是等google发邮件提示成功了</strong></p>
-<h3>申请过程中可能会遇见的问题</h3>
-
-<p>比如创建用户成功之后会进入一个无<strong>css</strong>和<strong>js</strong>的无法操作页面重新登陆还是会那样</p>
-<p>这说明你<code>google</code>账号设置的年龄未满18周岁 只需要到生日那边调一下即可</p>
-<hr>
-<p><strong><h1>奇葩的问题</h1></strong></p>
-<p>这边说一下博主申请的时候遇见了哪一些</p>
-<p>博主一共申请了三次 第三次终于过了 = =</p>
-<p>第一次 google 发邮件给博主 说 申请失败具体原因点进去一看 居然是 有r18 成人 色情内容</p>
-<p>色情内容！！！ what ？？？？</p>
-<p><img src="https://i.loli.net/2019/05/15/5cdbd6a6ac31561431.jpg" alt="请输入图片描述"></p>
-<p>我看了看博客 也就几张动漫头图 我同学甚至给我说 是头图里面的人物胸太大惹 关键是我还信了</p>
-<p>后来什么都没干 我觉得 直接申请第二次 果不其然第二次也失败了</p>
-<p><strong>我怀疑google 又要说我有色情内容 没想到是说我博客不符合标准</strong></p>
-<p>我果断申请了第三次 Lucky</p>
-<p>就申请成功惹 ！！！！！！！</p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>申请通过后：</p>
-<p>定时关注你后台广告的展现量和点击量，哪天发现数据波动很大，记得主动联系客服报备。</p>
-<p>100刀提现前，自己千万千万不要点击包括喊人帮你点击网站广告。</p>
-<p>因为很多人会在100刀提现额度之前被封账号。</p>
-<hr>
-<h2>最后希望大家都申请成功 另外觉得文章还行的话可以点一下广告偶 不会耽误时间的呢 （<del>我很可爱 请给我钱</del></h2>
-
+        <p>分享一下自己以前用的博客框架Hexo 如何添加自己的域名</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p><strong>域名配置</strong><br>现在已经可以通过 <a href="https://yourname.github.io" target="_blank" rel="noopener">https://yourname.github.io</a> 来访问自己的博客站点啦。这时可能有人会说了，大家都通过github.io来访问，好没个性，能不能配置用自己的域名来访问自己的站点。答案当然可以。<br>首先，你得有个自己的域名，如果还没，那就去买个。<br>进域名控制台，在解析里面添加一条CNAME记录，指向yourname.github.io即可。</p>
+<p><img src="https://kurumi.ink/images/wztp/Hexoblog.png" alt="请输入图片描述"></p>
+<p>到blog/source目录下创建CNAME文件，添加你要绑定的域名保存。</p>
+<p><img src="https://i.loli.net/2019/05/11/5cd6eafe55786.png" alt="域名"></p>
+<p>然后执行部署</p>
+<pre><code>hexo d -g</code></pre><p>部署好之后打开你的<code>Github</code>仓库点开<code>Setting</code>滑倒下面找到<code>GitHub Pages</code>然后到<code>Custom domain</code>下方到输入框里面输入你的域名注意不要加<code>http://</code></p>
+<p>之后点击<code>Save</code>保存然后就完成了</p>
+<p>不出意外，这时用自己的域名就可以访问自己的博客站点，如果出错，极可能是DNS数据还没更新，请稍等一段时间再试，DNS数据同步更新一般不会超过48小时。</p>
 
         
     
@@ -599,7 +556,7 @@ s.setAttribute('data-timestamp', +new Date());
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/06/19/sspanel搭建/" id="post_nav-newer" class="prev-content">
+        <a href="/2019/06/16/5/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -613,7 +570,7 @@ s.setAttribute('data-timestamp', +new Date());
 
     <!-- Next Nav -->
     
-        <a href="/2019/06/16/一个提高网站页面加载速度的JS脚本/" id="post_nav-older" class="next-content">
+        <a href="/2019/06/16/4/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
