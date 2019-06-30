@@ -580,7 +580,7 @@ a:-webkit-any-link {
 .github-badge .bg-blueviolet {
     background-color: #8833D7 !important;
 }
-.github-badge .bg-lightgrey, .github-badge .bg-lightgray {
+.github-badge .bg-lightgrey {
     background-color: #9f9f9f !important;
 }
 
