@@ -111,12 +111,6 @@ body {
 body {
     font-size: 14.5px;
 }
-body {
-    font-family: Roboto,Noto,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    color: rgba(0,0,0,.87);
-    background-color: #fff;
-}
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -214,12 +208,6 @@ body {
 @media (min-width: 600px)
 body {
     font-size: 14.5px;
-}
-body {
-    font-family: Roboto,Noto,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    color: rgba(0,0,0,.87);
-    background-color: #fff;
 }
 html {
     line-height: 1.15;
