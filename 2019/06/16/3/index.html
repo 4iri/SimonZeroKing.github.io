@@ -63,8 +63,11 @@
     <link rel="apple-touch-icon" href="/img/favicon.png">
     <link href="/css/charlotte.css" rel="stylesheet">
     <link href="/css/github-markdown-css-for-blog.css" rel="stylesheet">
+    <!-- Gitalk -->
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-    <!--Google AdSense-->
+    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
@@ -565,8 +568,19 @@
             <!-- 评论 == Gitalk -->
             <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
 
+            <div id="gitalk-container"></div>
+            <script type="text/javascript">
+                var gitalk = new Gitalk({
+                    clientID: '3c6e644824ccb2fdd657',
+                    clientSecret: 'fdcf1e1d0597d68065845523c29674465c8ba739',
+                    id: window.location.pathname,
+                    repo: 'SimonZeroKing.github.io',
+                    owner: 'SimonZeroKing',
+                    admin: 'SimonZeroKing'
+                })
+                gitalk.render('gitalk-container')
+            </script>
 
-                
             </div>
             
             <!-- Google AdSense -->
