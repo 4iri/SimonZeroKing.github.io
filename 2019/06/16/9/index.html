@@ -269,7 +269,7 @@
 
     
         <meta property="article:published_time" content="Sun Jun 16 2019 02:03:55 GMT+0900">
-        <meta property="article:modified_time" content="Fri Jun 28 2019 04:37:13 GMT+0900">
+        <meta property="article:modified_time" content="Thu Jul 04 2019 17:53:37 GMT+0900">
     
 
     <!-- The Twitter Card protocol -->
@@ -296,7 +296,7 @@
     "mainEntityOfPage": "https://i.kurumi.ink/2019/06/16/9/index.html",
     "headline": "搭建自己的SSR服务器",
     "datePublished": "Sun Jun 16 2019 02:03:55 GMT+0900",
-    "dateModified": "Fri Jun 28 2019 04:37:13 GMT+0900",
+    "dateModified": "Thu Jul 04 2019 17:53:37 GMT+0900",
     "author": {
         "@type": "Person",
         "name": "番茄酱",
@@ -374,7 +374,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">SSH连接Vps</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装脚本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">3.</span> <span class="post-toc-text">关闭或者开启或者配置多端口</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">4.</span> <span class="post-toc-text">加速Vps服务器</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SSH连接Vps"><span class="post-toc-number">1.</span> <span class="post-toc-text">SSH连接Vps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装脚本"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装脚本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关闭或者开启或者配置多端口"><span class="post-toc-number">3.</span> <span class="post-toc-text">关闭或者开启或者配置多端口</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#加速Vps服务器"><span class="post-toc-number">4.</span> <span class="post-toc-text">加速Vps服务器</span></a></li></ol>
     </ul>
     
 
@@ -540,13 +540,9 @@
 <p><strong>可安装服务的Linux系统有<code>CentOS/Debian/Ubuntu</code></strong></p>
 <p>好的话不多说就开始我们的教程吧</p>
 <p><strong>我们将会用到一个 ShadowsocksR单/多端口一键管理脚本</strong></p>
-<h3>SSH连接Vps</h3>
-
-<p><strong>Mac/Linux系统的电脑直接终端连接</strong></p>
+<h2 id="SSH连接Vps"><a href="#SSH连接Vps" class="headerlink" title="SSH连接Vps"></a>SSH连接Vps</h2><p><strong>Mac/Linux系统的电脑直接终端连接</strong></p>
 <pre><code>ssh root@你vps的ip -p 22(这个22是你Vps的ssh端口如果你自己修改成其他的端口 请输入你修改的端口)</code></pre><p><strong>Windows系统的电脑可能需要用到第三方工具例如 <code>Putty</code>,<code>Xshell</code> 等工具</strong></p>
-<h3>安装脚本</h3>
-
-<blockquote>
+<h2 id="安装脚本"><a href="#安装脚本" class="headerlink" title="安装脚本"></a>安装脚本</h2><blockquote>
 <p>依次输入以下命令</p>
 </blockquote>
 <pre><code>yum -y install wget
@@ -558,14 +554,10 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/SimonZeroKing/S
 <blockquote>
 <p>安装提示配置成功之后就会提示SSR账号的配置信息添加到SSR客户端就好惹</p>
 </blockquote>
-<h3>关闭或者开启或者配置多端口</h3>
-
-<blockquote>
+<h2 id="关闭或者开启或者配置多端口"><a href="#关闭或者开启或者配置多端口" class="headerlink" title="关闭或者开启或者配置多端口"></a>关闭或者开启或者配置多端口</h2><blockquote>
 <p>到Vps 的~目录下输入bash ssr.sh就可以进入管理页面</p>
 </blockquote>
-<h3>加速Vps服务器</h3>
-
-<p>请参考之前的 <a href="/2019/06/16/添加BBR脚本使服务器加速/">添加BBR脚本使服务器加速</a> 这篇文章</p>
+<h2 id="加速Vps服务器"><a href="#加速Vps服务器" class="headerlink" title="加速Vps服务器"></a>加速Vps服务器</h2><p>请参考之前的 <a href="/2019/06/16/添加BBR脚本使服务器加速/">添加BBR脚本使服务器加速</a> 这篇文章</p>
 
         
     
