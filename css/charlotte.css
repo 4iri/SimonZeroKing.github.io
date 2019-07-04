@@ -81,7 +81,7 @@ body ::-webkit-scrollbar-thumb {
     height: 54px;
     line-height: 54px;
     color: #fff!important;
-    background-color: #3a3f51!important;
+    background-color: #3a3f5175!important;  /* background-color: #3a3f51!important; */
 }
 .mdui-toolbar {
     display: -webkit-box;
