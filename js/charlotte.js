@@ -4,7 +4,7 @@ document.addEventListener('visibilitychange', function() {
     if (isHidden) {
      document.title = '404 Not Found';
     } else {
-     document.title = "Charlotte's Blog";
+     document.title = "Sharottoの博客";
     }
    });
    
