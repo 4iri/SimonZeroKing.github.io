@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://i.kurumi.ink/"/>
-  <updated>2019-12-12T04:02:23.804Z</updated>
+  <updated>2019-12-24T18:30:08.658Z</updated>
   <id>https://i.kurumi.ink/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019の圣诞节</title>
+    <link href="https://i.kurumi.ink/2019/12/25/Christmas_for_2019/"/>
+    <id>https://i.kurumi.ink/2019/12/25/Christmas_for_2019/</id>
+    <published>2019-12-24T18:09:20.303Z</published>
+    <updated>2019-12-24T18:30:08.658Z</updated>
+    
+    <content type="html"><![CDATA[<p>欸嘿 这里是爱爱爱莉 (( 今天就是圣诞节力 祝大家 圣诞节快乐 !!!</p><hr><p>你们也该发现力吧 咱的博客加了下雪特效 所以也教一下大家改如何添加特效 （就是一个<code>js</code> 超简单的说 （完全不需要教学</p><p>只需要给博客加入下面这段<code>js</code></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"//i.kurumi.ink/js/snow.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这是直接引用我博客的<code>js</code> 由于是储存在<code>Github</code>所以会慢(对国内用户可能会慢) 你萌可以把<code>js</code> 直接下载到本地 然后引用啦 !!!</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=422429997&auto=1&height=32"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;欸嘿 这里是爱爱爱莉 (( 今天就是圣诞节力 祝大家 圣诞节快乐 !!!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;你们也该发现力吧 咱的博客加了下雪特效 所以也教一下大家改如何添加特效 （就是一个&lt;code&gt;js&lt;/code&gt; 超简单的说 （完全不需要教学&lt;/p&gt;
+&lt;p&gt;只需要给博客加入下
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>SSPanel Uim 收款支付接入教程</title>
